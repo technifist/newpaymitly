@@ -1,0 +1,453 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.parent-sign {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto; 
+}
+
+.block-sign .card{
+    display: block;
+    border: none;
+}
+
+.chat ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.chat ul li {
+  margin: 45px 0 0 0;
+  font-weight: 300;
+}
+.chat ul li a.user {
+  margin: -30px 0 0 0;
+  display: block;
+  color: #333;
+}
+.chat ul li a.user img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.chat ul li .date {
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.chat ul li .message {
+  display: block;
+  padding: 10px;
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  background-color: #2ECC71;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.chat ul li .message:before {
+  content: '';
+  position: absolute;
+  border-top: 16px solid rgba(0, 0, 0, 0.15);
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+}
+.chat ul li .message:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 17px solid #2ECC71;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+}
+.chat ul li .message.blur p {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+.chat ul li .message.blur .hider {
+  opacity: 1;
+  z-index: 1;
+}
+.chat ul li .message p {
+  margin: 0;
+  padding: 0;
+  transition: all 0.1s;
+}
+.chat ul li .message .hider {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: -10px;
+  text-align: center;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.1s;
+}
+.chat ul li .message .hider span {
+  display: block;
+  position: relative;
+  top: 50%;
+  font-size: 16px;
+  transform: translateY(-50%);
+}
+.chat ul li.other a.user {
+  float: right;
+}
+.chat ul li.other .date {
+  float: right;
+  margin: -20px 10px 0 0;
+}
+.chat ul li.other .message {
+  margin: 0 90px 0 0;
+}
+.chat ul li.other .message:before {
+  margin: -9px -16px 0 0;
+  right: 0;
+}
+.chat ul li.other .message:after {
+  content: '';
+  right: 0;
+  margin: 0 -15px 0 0;
+}
+.chat ul li.you a.user {
+  float: left;
+}
+.chat ul li.you .date {
+  float: left;
+  margin: -20px 0 0 10px;
+}
+.chat ul li.you .message {
+  margin: 0 0 0 90px;
+}
+.chat ul li.you .message:before {
+  margin: -9px 0 0 -16px;
+  left: 0;
+}
+.chat ul li.you .message:after {
+  content: '';
+  left: 0;
+  margin: 0 0 0 -15px;
+}
+.circle-invoice {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.i-invoice {
+  font-size: 18px;
+    line-height: 80px;
+    color: #fff;
+    background-color: #999;
+    text-align: center;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.mt-0 {
+  margin-top: 0px
+}
+.mb-0 {
+  margin-bottom: 0px
+}
+.ml-0 {
+  margin-left: 0px
+}
+.text-success {
+  color: #2e7d32 !important;
+}
+.text-danger {
+  color: #d32f2f !important;
+}
+.width50 {
+  width: 80px;
+}
+.carousel .carousel-item {
+max-height:100px !important;}
+
+/* 2dp elevation modified*/
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav, .wallet {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.wallet span.badge {
+  margin-top: calc(24px - 11px);
+}
+.wallet .collapsible,
+.wallet.fixed .collapsible {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wallet .collapsible li,
+.wallet.fixed .collapsible li {
+  padding: 0;
+}
+
+.wallet .collapsible-header,
+.wallet.fixed .collapsible-header {
+  background-color: transparent;
+  border: none;
+  line-height: inherit;
+  height: inherit;
+  padding: 0 16px;
+}
+
+.wallet .collapsible-header:hover,
+.wallet.fixed .collapsible-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.wallet .collapsible-header i,
+.wallet.fixed .collapsible-header i {
+  line-height: inherit;
+}
+
+.wallet .collapsible-body,
+.wallet.fixed .collapsible-body {
+  border: 0;
+  background-color: #fff;
+}
+
+.wallet .collapsible-body li a,
+.wallet.fixed .collapsible-body li a {
+  padding: 0 23.5px 0 31px;
+}
+.wallet {
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateX(-105%);
+          transform: translateX(-105%);
+}
+
+.wallet.right-aligned {
+  right: 0;
+  -webkit-transform: translateX(105%);
+          transform: translateX(105%);
+  left: auto;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.wallet .collapsible {
+  margin: 0;
+}
+
+.wallet li {
+  float: none;
+  line-height: 48px;
+}
+
+.wallet li.active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.wallet li > a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+
+.wallet li > a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.wallet li > a.btn, .wallet li > a.btn-large, .wallet li > a.btn-small, .wallet li > a.btn-large, .wallet li > a.btn-flat, .wallet li > a.btn-floating {
+  margin: 10px 15px;
+}
+
+.wallet li > a.btn, .wallet li > a.btn-large, .wallet li > a.btn-small, .wallet li > a.btn-large, .wallet li > a.btn-floating {
+  color: #fff;
+}
+
+.wallet li > a.btn-flat {
+  color: #343434;
+}
+
+.wallet li > a.btn:hover, .wallet li > a.btn-large:hover, .wallet li > a.btn-small:hover, .wallet li > a.btn-large:hover {
+  background-color: #2bbbad;
+}
+
+.wallet li > a.btn-floating:hover {
+  background-color: #26a69a;
+}
+
+.wallet li > a > i,
+.wallet li > a > [class^="mdi-"], .wallet li > a li > a > [class*="mdi-"],
+.wallet li > a > i.material-icons {
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 32px 0 0;
+  width: 24px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.wallet .divider {
+  margin: 8px 0 0 0;
+}
+
+.wallet .subheader {
+  cursor: initial;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.wallet .subheader:hover {
+  background-color: transparent;
+}
+
+.wallet .user-view {
+  position: relative;
+  padding: 32px 32px 0;
+  margin-bottom: 8px;
+}
+
+.wallet .user-view > a {
+  height: auto;
+  padding: 0;
+}
+
+.wallet .user-view > a:hover {
+  background-color: transparent;
+}
+
+.wallet .user-view .background {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wallet .user-view .circle, .wallet .user-view .name, .wallet .user-view .email {
+  display: block;
+}
+
+.wallet .user-view .circle {
+  height: 64px;
+  width: 64px;
+}
+
+.wallet .user-view .name,
+.wallet .user-view .email {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.wallet .user-view .name {
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.wallet .user-view .email {
+  padding-bottom: 16px;
+  font-weight: 400;
+}
+.wallet.wallet-fixed {
+  left: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  position: fixed;
+}
+
+.wallet.wallet-fixed.right-aligned {
+  right: 0;
+  left: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .wallet.wallet-fixed {
+    -webkit-transform: translateX(-105%);
+            transform: translateX(-105%);
+  }
+  .wallet.wallet-fixed.right-aligned {
+    -webkit-transform: translateX(105%);
+            transform: translateX(105%);
+  }
+  .wallet > a {
+    padding: 0 16px;
+  }
+  .wallet .user-view {
+    padding: 16px 16px 0;
+  }
+}
+
+.wallet .collapsible-body > ul:not(.collapsible) > li.active,
+.wallet.wallet-fixed .collapsible-body > ul:not(.collapsible) > li.active {
+  background-color: #ee6e73;
+}
+
+.wallet .collapsible-body > ul:not(.collapsible) > li.active a,
+.wallet.wallet-fixed .collapsible-body > ul:not(.collapsible) > li.active a {
+  color: #fff;
+}
+
+.wallet .collapsible-body {
+  padding: 0;
+}
+
+.wallet-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
+  display: none;
+}
+

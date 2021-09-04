@@ -1,0 +1,49 @@
+INFO : paypal START -> paypal on line 158
+INFO : POST DATA -> paypal on line 159
+INFO : Array
+(
+    [mc_gross] => 3.20
+    [protection_eligibility] => Eligible
+    [payer_id] => V9GG58LCLTC3C
+    [payment_date] => 13:16:19 Jun 13, 2020 PDT
+    [payment_status] => Completed
+    [charset] => windows-1252
+    [first_name] => Naima
+    [mc_fee] => 0.41
+    [notify_version] => 3.9
+    [custom] => admin
+    [payer_status] => verified
+    [business] => payments@paymitly.com
+    [quantity] => 1
+    [verify_sign] => Ak663OVWAd1RfMSsxaYD-VVZ6AQIAaYmnmR1HQYNoVGBMFF5R9NNYypx
+    [payer_email] => paymitly@gmail.com
+    [txn_id] => 5WB591418W843553P
+    [payment_type] => instant
+    [payer_business_name] => SmartConcerns
+    [last_name] => Aslam
+    [receiver_email] => zarnab.lashari@gmail.com
+    [payment_fee] => 0.41
+    [shipping_discount] => 0.00
+    [receiver_id] => TBNSDXES75X5J
+    [insurance_amount] => 0.00
+    [txn_type] => web_accept
+    [item_name] => Deposit for the only virtual bank
+    [discount] => 0.00
+    [mc_currency] => USD
+    [item_number] => Deposit for admin
+    [residence_country] => AE
+    [shipping_method] => Default
+    [transaction_subject] => 
+    [payment_gross] => 3.20
+    [ipn_track_id] => b47df2e34294a
+)
+ -> paypal on line 160
+INFO : raw_post_data :  -> paypal on line 173
+INFO : mc_gross=3.20&protection_eligibility=Eligible&payer_id=V9GG58LCLTC3C&payment_date=13%3A16%3A19+Jun+13%2C+2020+PDT&payment_status=Completed&charset=windows-1252&first_name=Naima&mc_fee=0.41&notify_version=3.9&custom=admin&payer_status=verified&business=payments%40paymitly.com&quantity=1&verify_sign=Ak663OVWAd1RfMSsxaYD-VVZ6AQIAaYmnmR1HQYNoVGBMFF5R9NNYypx&payer_email=paymitly%40gmail.com&txn_id=5WB591418W843553P&payment_type=instant&payer_business_name=SmartConcerns&last_name=Aslam&receiver_email=zarnab.lashari%40gmail.com&payment_fee=0.41&shipping_discount=0.00&receiver_id=TBNSDXES75X5J&insurance_amount=0.00&txn_type=web_accept&item_name=Deposit+for+the+only+virtual+bank&discount=0.00&mc_currency=USD&item_number=Deposit+for+admin&residence_country=AE&shipping_method=Default&transaction_subject=&payment_gross=3.20&ipn_track_id=b47df2e34294a -> paypal on line 174
+INFO : Got VERIFIED when processing IPN data -> paypal on line 212
+INFO : Check user admin -> paypal on line 228
+INFO : Check user admin FOUND -> paypal on line 246
+INFO : Get Merchant  admin FOUND -> paypal on line 249
+INFO : verify_status = 1 - is_direct = direct_pay - payment_status = Completed -> paypal on line 280
+ERR : $merchant_account == $receiver_emailpayments@paymitly.com == zarnab.lashari@gmail.com -> paypal on line 348
+ERR : Merchant is not same as paypal -> paypal on line 437
